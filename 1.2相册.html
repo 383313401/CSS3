@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8"/>
+    <title>倾斜摆放动画相册</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: #eee;
+        }
+        .container {
+            width: 1060px;
+            height: 550px;
+            margin: 60px auto;
+            position: relative;
+        }
+        .container img {
+            display: inline-block;
+            width: 350px;
+            position: absolute;
+            padding: 10px 10px 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            -webkit-transition: 1s;
+            transition: 1s;
+            z-index: 1;
+        }
+
+        .container img:hover {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-box-shadow: 5px 5px 5px #ddd;
+            box-shadow: 5px 5px 5px #ddd;
+            z-index: 2;
+            cursor: pointer;
+        }
+        .pic1 {
+            top: 0;
+            left: 400px;
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        .pic2 {
+            top: 0;
+            left: 600px;
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+        .pic3 {
+            bottom: 0px;
+            right: 0;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+
+        .pic4 {
+            bottom: 0;
+            left: 450px;
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        .pic5 {
+            bottom: 0px;
+            left: 0;
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+
+       .container .pic6 {
+            top: 0px;
+            left: 0;
+            width:250px;
+            -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+        }
+
+        .pic7 {
+            top: 0;
+            left: 850px;
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+
+        .pic8 {
+            bottom: 20px;
+            right: 430px;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        }
+        .pic9 {
+            top: 100px;
+            left: 750px;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+        .pic10 {
+            left: 180px;
+            top: 0px;
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+        .container .pic11{
+            top:100px;
+            left:500px;
+            width:200px;
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="images/99.jpg" class="pic11"/>
+    <img src="images/1.jpg" class="pic1"/>
+    <img src="images/2.jpg" class="pic2"/>
+    <img src="images/3.jpg" class="pic3"/>
+    <img src="images/4.jpg" class="pic4"/>
+    <img src="images/5.jpg" class="pic5"/>
+    <img src="images/6.jpg" class="pic6"/>
+    <img src="images/7.jpg" class="pic7"/>
+    <img src="images/8.jpg" class="pic8"/>
+    <img src="images/9.jpg" class="pic9"/>
+    <img src="images/10.jpg" class="pic10"/>
+
+</div>
+</body>
+</html>
